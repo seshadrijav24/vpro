@@ -57,7 +57,7 @@ query_embedding = model.encode(question).tolist()
 
 results = index.query(
     vector=query_embedding,
-    top_k=2,
+    top_k=1,
     include_metadata=True
 )
 
