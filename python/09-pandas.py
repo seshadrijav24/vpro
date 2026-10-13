@@ -126,3 +126,80 @@
 # res3 = pd.merge(students,marks,on="student_id",how="outer")
 # print(res3)
 
+
+# Example-7
+# import pandas as pd
+
+# df = pd.DataFrame({
+#     "name":["Std1","Std2","Std3","Std4"],
+#     "marks":[80,90,70,60],
+#     "age":[20,21,22,23]
+# })
+# df["marks"] = 100
+# print(df)
+
+# df["marks"] = df["marks"] + 10
+# print(df)
+
+# df[["marks","age"]] = 0
+# print(df)
+
+
+# Example-8
+# import pandas as pd
+# df = pd.DataFrame({
+#     "Name":["Ram","Ram","Ravi","Ravi"],
+#     "products":["Laptop","Mobile","Laptop","Mobile"],
+#     "Sales":[50000,20000,60000,30000]
+# })
+# print(df)
+# print("-----------------------")
+# res = df.pivot(index="Name",columns="products",values="Sales")
+# print(res)
+
+
+# Example-9
+# import pandas as pd
+# df = pd.DataFrame({
+#     "Name":["Ram","Ravi","Anil","Kiran"],
+#     "marks":[80,None,90,None]
+# }) 
+# print(df.isnull())
+# print(df.isna())
+
+# res = df.fillna(100,inplace=False)
+# print(res)
+# print(df)
+
+# df["marks"] = df["marks"].fillna(70,inplace=True)
+# print(df)
+
+# df["marks"] = df["marks"].ffill()
+# print(df)
+
+# df["marks"] = df["marks"].bfill()
+# print(df)
+
+# df["marks"] = df["marks"].fillna(df["marks"].mean())
+# print(df)
+
+# print( df.dropna() )
+
+# print( df.isnull().sum() )
+
+# Example-10
+# import pandas as pd
+# data = {
+#     "Name":["Ravi","Sita","Rahul"],
+#     "Age":[25,22,28],
+#     "City":["Hyderanad","Chennai","Bangalore"]
+# }
+# df = pd.DataFrame(data,index=["a","b","c"])
+# print(df)
+# print(df.loc["b"])
+# print(df.loc["c"])
+# print(df.loc["b":"c"])
+
+# print(df.iloc[0])
+# print(df.iloc[2,1])
+# print(df.iloc[0:2])
