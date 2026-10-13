@@ -136,11 +136,11 @@
 # print(res)
 
 # Example-8
-import pandas as pd
-df = pd.DataFrame({
-    "Name":["Ram","Ravi","Anil","Kiran"],
-    "marks":[80,None,90,None]
-})
+# import pandas as pd
+# df = pd.DataFrame({
+#     "Name":["Ram","Ravi","Anil","Kiran"],
+#     "marks":[80,None,90,None]
+# })
 # print(df)
 
 # df.drop(1,inplace=True)
@@ -179,3 +179,17 @@ df = pd.DataFrame({
 # print(df.isna())
 
 # print(df.isnull().sum())
+
+
+# Example-9
+# import pandas as pd
+# df = pd.DataFrame({
+#     "Name":["Std1","Std2","Std3","Std4","Std5"],
+#     "marks":[60,70,80,90,100]
+# },index=["a","b","c","d","e"])
+# print(df)
+# print(df.loc["a"])
+# print(df.loc["a":"d"])
+
+# print(df.iloc[0])
+# print(df.iloc[0:2]) # 0 & 1 included and 2 exclude
