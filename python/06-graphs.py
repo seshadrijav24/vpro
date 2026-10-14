@@ -65,7 +65,7 @@
 
 # plt.figure(figsize=(10,5))
 
-# bars = plt.bar(months,sales,color="black")
+# bars = plt.bar(months,sales,color="orange")
 # bars1 = plt.bar(months,profits,color="red")
 
 # plt.xlabel("Months")
@@ -76,7 +76,7 @@
 # plt.grid(axis="y",linestyle="--",alpha=0.5)
 
 # for bar in bars:
-#     value = bar.get_height() + 4
+#     value = bar.get_height()
 #     plt.text(bar.get_x() + (bar.get_width()/2) , value, str(value), ha="center",va="center")
 
 
@@ -128,7 +128,7 @@
 # plt.savefig("histo.png")
 # plt.show()
 
-# Subplots
+# # Subplots
 # import matplotlib.pyplot as plt
 
 # plt.subplot(2,2,1)
@@ -142,6 +142,13 @@
 # plt.xlabel("Months")
 # plt.ylabel("Sales")
 # plt.title("Bar Chart")
+
+
+# plt.subplot(2,2,3)
+# #histo
+
+# plt.subplot(2,2,4)
+# #line plot
 
 # plt.tight_layout()
 # plt.savefig("sub.png")
@@ -162,7 +169,7 @@
 # plt.show()
 
 
-#box-plot (analysis 1st quarter, half year, 3rd querter,.....)
+# box-plot (analysis 1st quarter, half year, 3rd querter,.....)
 # import matplotlib.pyplot as plt
 
 # python_marks = [45,50,52,55,58,60,65,68,70,72]
@@ -180,18 +187,18 @@
 
 # heatmap
 # python std1 - 90(dark green). std2 - 60(green). std3 - 40(light green)
-# import matplotlib.pyplot as plt
-# students = ["Std1","Std2","Std3","Std4"]
-# subjects = ["Python","Java","SQL","React"]
-# marks = [[80,70,85,75],
-#          [90,85,88,92],
-#          [60,65,70,68],
-#          [85,90,92,88]]
-# plt.imshow(marks,cmap="viridis")        # viridis, plasma,magma, cividis,coolwarm,
-# plt.xticks(range(len(subjects)),subjects)
-# plt.yticks(range(len(students)),students)
-# plt.colorbar(label="marks")
-# plt.title("Marks Distribution")
-# plt.savefig("heat.png")
-# plt.show()
+import matplotlib.pyplot as plt
+students = ["Std1","Std2","Std3","Std4"]
+subjects = ["Python","Java","SQL","React"]
+marks = [[80,70,85,75],
+         [90,85,88,92],
+         [60,65,70,68],
+         [85,90,92,88]]
+plt.imshow(marks,cmap="viridis")        # viridis, plasma,magma, cividis,coolwarm,
+plt.xticks(range(len(subjects)),subjects)
+plt.yticks(range(len(students)),students)
+plt.colorbar(label="marks")
+plt.title("Marks Distribution")
+plt.savefig("heat.png")
+plt.show()
 
