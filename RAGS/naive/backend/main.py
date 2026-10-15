@@ -73,7 +73,7 @@ def create_embeddings(text_list):
 
 
 # STEP 1 and STEP 2: Upload and read PDF
-@app.post("/upload-pdf")
+@app.post("/upload-pdf")        # React
 async def upload_pdf(file: UploadFile = File(...)):
     global chunks, vector_index
 
@@ -138,7 +138,7 @@ class Question(BaseModel):
     question: str
 
 
-@app.post("/ask")
+@app.post("/ask")               # ReactJS
 def ask_question(data: Question):
     if vector_index is None or not chunks:
         raise HTTPException(
