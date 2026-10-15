@@ -1,3 +1,39 @@
+
+corrective
+**********
+
+1) right click
+
+2) env ()
+
+Agentic AI
+      100 + files
+
+agentic-ai
+        backend
+            100 +
+
+        frontend
+              20 +
+
+        docker
+            2 +
+
+        k8n
+            2+
+
+        monitoring
+            5+ 
+
+        azure
+            1+
+ 
+
+
+
+
+
+
 naive
     backend
         .env (API Keys)
