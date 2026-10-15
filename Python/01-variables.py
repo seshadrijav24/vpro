@@ -53,6 +53,9 @@
 #     ---
 # """
 # print(course)
+"""hi
+welcome
+"""
 
 
 # str - immutable (we can't modify)
